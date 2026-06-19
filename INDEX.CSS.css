@@ -1,0 +1,109 @@
+BODY{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c3e50;
+    padding: 15px 50px;
+    color: white;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color:orangered;
+}
+.nav-links {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.nav-links a:hover{
+color: #f1c40f;
+}
+.hero{
+    height: 80vh;
+    background-image: url(file:///C:/Users/Rahul%20Kumar/Downloads/pexels-quang-nguyen-vinh-222549-14021050.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.explore-btn{
+    padding: 15px 40px;
+    background-color: #f1c40f;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.explore-btn:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+.info-section{
+    display: flex;
+    padding: 50px;
+    gap: 40px;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+.image-box{ flex:1;}
+.imgage-box img{
+    width:100%;
+    border-radius: 10px;
+
+}
+.text-box{ flex:1;}
+.text-box h2 { color: #2c3e50; margin-bottom:20px;}
+.text-box p{ font-size: 18px; line-height: 1.6; color: #555;}
+
+.reverse-section{
+ flex-direction: row-reverse;
+ background-color: #ffffff;
+}
+@media (max-width: 768px){
+    .info-section{
+        flex-direction: column;
+    }
+    .reverse-section{
+        flx-direction:column;
+    }
+}
+.gallery-section{ padding: 50px; background-color: #f4f4f4;}
+.grid-container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow:0 4px 10px;
+    transform: 0.3s;
+}
+.card:hover{ transform: translate(-10px);}
+.card img{
+    img:100%;
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+@media (max-width: 768px){
+    .grid-container {grid-template-colums:1fr ;}
+}
